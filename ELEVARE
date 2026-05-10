@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevare Design Group | Portfolio</title>
+    <style>
+        /* 1. Basic Reset */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #1a1a1a; /* Dark theme to match your cover */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 2. Container to hold the iframe and the mask */
+        .viewport-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* 3. The Flipbook Frame */
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 4. The Branding Mask (Hides the Heyzine Logo) */
+        .logo-mask {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 180px;  /* Width of the Heyzine logo area */
+            height: 70px;  /* Height of the Heyzine logo area */
+            background-color: #1a1a1a; /* Matches the background color */
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none; /* Allows clicks to go "through" it if necessary */
+        }
+
+        /* 5. Optional: Add your name/brand text inside the mask */
+        .mask-text {
+            color: #ffffff;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="viewport-container">
+        <iframe src="https://heyzine.com/flip-book/1f268b08d8.html" allowfullscreen></iframe>
+
+        <div class="logo-mask">
+            <div class="mask-text">ELEVARE</div>
+        </div>
+    </div>
+
+</body>
+</html>
